@@ -1,4 +1,4 @@
-This application is built over create-react-app. All components are separated from the App component.
+This application is built over create-react-app.
 
 <ins>App Component (functional)</ins>
 
