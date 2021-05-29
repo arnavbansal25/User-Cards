@@ -8,7 +8,7 @@ function UserCards({ users }) {
                 {
                     users.map((user) => {
                         return (
-                            <Card key={user.id} className="user-card text-center pt-4 col-10 col-sm-6 col-md-4 col-lg-3 p-2">
+                            <Card key={user.id} className="user-card text-center col-8 col-sm-6 col-md-4 col-lg-3 p-2 pt-4">
                                 <CardImg className="user-img" src={user.avatar} />
                                 <CardBody>
                                     <CardTitle>{user.first_name + " " + user.last_name}</CardTitle>
