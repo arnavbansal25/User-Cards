@@ -1,7 +1,7 @@
 .navbar-light{
-  width: 95%;
-  margin: auto;
-  border-radius: 10px;
+  /* width: 95%; */
+  /* margin: auto; */
+  /* border-radius: 10px; */
   background-color: lightyellow;
 }
 
@@ -10,4 +10,21 @@
   justify-content: center;
   margin-top: 2%;
   color: #79cbb8;
+}
+
+.user-card{
+  transition: transform 0.3s, background-color 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  background-color: lightyellow;
+}
+
+.user-img{
+  border-radius: 50%;
+  width: 50%;
+  margin: auto;
 }
