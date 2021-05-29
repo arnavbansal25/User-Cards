@@ -16,34 +16,25 @@ class Main extends Component {
 
     render() {
         const getUsers = () => {
-            this.setState({
-                loader: true
-            });
-            axios
+            this.setState({ loader: true });
+           axios
                 .get("https://reqres.in/api/users?page=1")
                 .then((response) => {
-                    // console.log(response.data.data);
-                    this.setState({
-                        user_data: response.data.data
-                    });
+                    this.setState({ user_data: response.data.data });
                     setTimeout(function () {
-                        this.setState({
-                            loader: false
-                        });
-                    }, 500);
-
+                        this.setState({ loader: false });
+                    }.bind(this), 500);
                 })
                 .catch((error) => {
                     console.log(error);
                 });
-
         }
 
         return (
             <div>
-                <Header />
+                <Header btnClick={getUsers} />
 
-                {/* {loader ? <Loader /> : <UserCards users={user_data} />} */}
+                {this.state.loader ? <Loader /> : <UserCards users={this.state.user_data} />}
             </div>
         );
     }
