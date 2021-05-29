@@ -1,13 +1,23 @@
 This application is built over create-react-app. All components are separated from the App component.
-App Component (functional)
+
+<ins>App Component (functional)</ins>
+
 First, App component renders the `Main Component`, then Main Component renders `Header`, `Loader`, and `UserCards` components.
-Main Component (class)
+
+<ins>Main Component (class)</ins>
+
 Initially, the view of the Header component is rendered on the screen. When the `Get User` button is clicked, the Loader component’s view, basically a spinner, is added to the virtual DOM, followed by the browser DOM until the data is fetched through API and stored as a state. Once the data is entirely fetched, the loader state is set to false, and the view of the UserCards component replaces the view in virtual DOM. 
-Header Component (functional)
+
+<ins>Header Component (functional)</ins>
+
 This component renders the navbar, which contains a brand logo and a brand name, and the "Get User" button that is an onClick function.
-Loader Component (functional)
+
+<ins>Loader Component (functional)</ins>
+
 I have used font-awesome animated icons to show the loader animation.
-UserCards Component (functional)
+
+<ins>UserCards Component (functional)</ins>
+
 The component receives API response through props and then renders the view, which is made responsive using bootstrap classes.
 
 There is only one style file for all the components, i.e., `App.css`.
