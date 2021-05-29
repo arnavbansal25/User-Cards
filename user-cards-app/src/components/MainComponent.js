@@ -20,6 +20,7 @@ class Main extends Component {
            axios
                 .get("https://reqres.in/api/users?page=1")
                 .then((response) => {
+                    console.log(response);
                     this.setState({ user_data: response.data.data });
                     setTimeout(function () {
                         this.setState({ loader: false });
