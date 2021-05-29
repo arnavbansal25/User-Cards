@@ -1,15 +1,26 @@
+body {
+  background-color: #f8eee7;
+}
+
 .navbar-light{
-  /* width: 95%; */
-  /* margin: auto; */
-  /* border-radius: 10px; */
-  background-color: lightyellow;
+  background-color: #f4decb;
+}
+
+.btn {
+  background-color: #1e392a;
+  color: #fff;
+}
+
+.btn:hover, .btn:visited, .btn:active {
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .spin{
   display: flex;
   justify-content: center;
   margin-top: 2%;
-  color: #79cbb8;
+  color: #1e392a;
 }
 
 .user-card{
@@ -20,7 +31,7 @@
   transform: scale(1.05);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   z-index: 2;
-  background-color: lightyellow;
+  background-color: #e2fdee;
 }
 
 .user-img{
