@@ -9,7 +9,7 @@ function Header(props) {
                 <NavbarBrand className="mr-auto" href="/">
                     <img src={logo} width="40" alt="brand logo" /> User Cards
                 </NavbarBrand>
-                <button className="" onClick={props.btnClick}>
+                <button className="btn" onClick={props.btnClick}>
                     Get Users
                 </button>
             </div>
