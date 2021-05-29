@@ -17,7 +17,7 @@ class Main extends Component {
     render() {
         const getUsers = () => {
             this.setState({ loader: true });
-           axios
+            axios
                 .get("https://reqres.in/api/users?page=1")
                 .then((response) => {
                     // console.log(response);
